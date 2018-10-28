@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="" ng-init="bar='hohoh';hat='badreyo';het='hytt'"">
+<html ng-app="" ng-init="names=['ahmed','alaa','wessam','kram']">
 <head>
     <script type="text/javascript" src="js/angular.min.js"></script>
     <meta charset="utf-8" />
@@ -14,7 +14,11 @@
     <p>{{name}}</p>
 
     {{7-5}}
-    {{hat}}
+    {{bar[3]}}
+
+    <ul ng-repeat="name in names">
+<li>{{name}}</li>
+    </ul>
     <span ng-bind="name"></span>
 </body>
 </html>
