@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="myApp" ng-init="names=['ahmed','alaa','wessam','kram']">
+<html ng-app="myApp" ng-init="">
 <head>
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
@@ -11,6 +11,7 @@
     <script src="main.js"></script>
 </head>
 <body>
+    <div ng-controller="myDive">
     <input  type="text" ng-model="name">
     <p>{{name}}</p>
 
@@ -21,5 +22,6 @@
 <li>{{name}}</li>
     </ul>
     <span ng-bind="name"></span>
+</div>
 </body>
 </html>
