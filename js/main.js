@@ -1,12 +1,15 @@
 var app=angular.modul('myApp',[]);
 app.controller("myDive", function ($scope){
 $scope.friends=[
-   {hussein:'huhuh',nolan:'noman'} ,
-   {hibba:"habbawi",nader:'nadaqwi'}
+   {name:'huhuh',desc:'noman'} ,
+   {name:"habbawi",desc:'nadaqwi'}
 
 
 
 ];
 
-
+$scope.Clickme=function(name,desc){
+$scope.updatename=name;
+$scope.updatedesc=desc;
+}
 });
